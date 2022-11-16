@@ -3878,8 +3878,13 @@ input, select, textarea {
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
+		
 	}
-
+	#pic {
+		width: 25%;
+		height: auto;
+		border-radius: 1em;
+	}
 		#intro p {
 			font-size: 1.25em;
 		}
@@ -3887,6 +3892,9 @@ input, select, textarea {
 			@media screen and (max-width: 980px) {
 
 				#intro p br {
+					display: none;
+				}
+				#pic {
 					display: none;
 				}
 
