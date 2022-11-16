@@ -3884,6 +3884,9 @@ input, select, textarea {
 		width: 25%;
 		height: auto;
 		border-radius: 1em;
+		border: 2px purple dashed;      
+		border-radius: 10px;     
+		padding: 1px;
 	}
 		#intro p {
 			font-size: 1.25em;
