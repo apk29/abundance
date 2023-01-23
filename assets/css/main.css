@@ -1799,6 +1799,7 @@ input, select, textarea {
 
 	.box {
 		border-radius: 0.25em;
+		border-color: #ffffff;
 		border: solid 1px rgba(255, 255, 255, 0.15);
 		margin-bottom: 2em;
 		padding: 1.5em;
