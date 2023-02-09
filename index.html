@@ -35,9 +35,12 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
-							<a href="https://vimeo.com/746988465/556c0b7f08" target="_blank">Into Video</a>
-							<h1>It’s all about your abundance. <img style="float: right" src="images/Headshot1.jpeg"  alt="headshot" id="pic" ></h1>
-							<h3>Welcome. I am so glad you are here and curious about how I can support you and your organization.</h3><br>
+							<p>It’s all about your abundance.</p>
+							<div class="img-with-text">
+							<img style="float: right" src="images/Headshot1.jpeg"  alt="headshot" id="pic">
+							<!-- <p><a style="float: right"href="https://vimeo.com/746988465/556c0b7f08" target="_blank">Intro Video</a></p> -->
+							</div>
+							<p>Welcome. I am so glad you are here and curious about how I can support you and your organization.</p><br>
 							<p>Organizations are complex and no matter what is going on with you or your team. 
 								Together I will help you see the best solutions and strategies for change <br>
 								by honoring the best of what your team members bring to the table.
@@ -46,14 +49,14 @@
 								work to do alone. Together I will help you feel supported, prepared, and <br>
 								confident for the challenges of your work. 
 							</p>
-							<h3>I bring over two decades of equity-minded coaching, consulting, facilitation, and <br>
+							<p>I bring over two decades of equity-minded coaching, consulting, facilitation, and 
 								teaching experience with individuals and organizations.
-							</h3>
+							</p><br>
 							
-							<h3>Whether you are a professional who works in equity and inclusion or you are an <br>
+							<p>Whether you are a professional who works in equity and inclusion or you are an <br>
 								executive or leader, organizations are complex and the work is hard and challenging <br>
 								to do alone. I will…
-							</h3><br>
+							</p><br>
 							<ul>
 							  <li>Help you feel <b>supported</b> and <b>prepared</b> for the challenges of your work</li>
 
@@ -66,7 +69,7 @@
 								<li>Help you clearly <b>recognize your potential</b> in periods of change </li>
 							  
 							</ul>
-							  <h3>Let’s build your abundance together.</h3><br>
+							  <p>Let’s build your abundance together.</p><br>
 							<ul class="actions">
 								<li><a href="#one" class="button scrolly">Let's talk</a></li>
 							</ul>
@@ -98,7 +101,7 @@
 							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Leadership Strategist and Consultan</h2>
+									<h2>Leadership Strategist and Consultant</h2>
 									<p>Strategist and consultant accompanying and guiding you through leadership development opportunities, change management, conflict mediation, and alignment support </p>
 									<ul class="actions">
 										<li><a href="generic.html" class="button">Let's talk</a></li>
@@ -213,42 +216,46 @@
 							<a href="generic.html" class="button">Let's meet!</a>
 							<div class="split style1">
 								<section>
-									<form method="post" action="#">
+									<form method="post" action="php/contact.php" id="contact-form" role="form">
 										<div class="fields">
 											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
+												<label id="nameLabel" for="c_name">Name</label>
+												<input class="input" id="c_name" type="text" name="name" required name="Name">
 											</div>
 											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
+												<label id="emailLabel" for="c_email">Email</label>
+												<input class="input" id="c_email" type="text" required name="Email">
 											</div>
 											<div class="field">
-												<label for="message">Message</label>
+												<label id="messageLabel" for="c_message">Message</label>
 												<textarea name="message" id="message" rows="5"></textarea>
 											</div>
 										</div>
+										<div class="section">
+											<span class="msg-error error"></span>
+											<div id="recaptcha" class="g-recaptcha" data-sitekey="6Lea9DwUAAAAAOsifRkhdUn2p8Kp4VJBFXxwauMM"></div>
+										 </div>
 										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
+											<li><button type="submit" id="c_btn" class="btn btn-primary">Send Message</button></li>
 										</ul>
 									</form>
 								</section>
 								<section>
 									<ul class="contact">
-										<li>
+										<!-- <li>
 											<h3>Address</h3>
 											<span>12345 Somewhere Road #654<br />
 											Nashville, TN 00000-0000<br />
 											USA</span>
-										</li>
+										</li> -->
 										<li>
 											<h3>Email</h3>
 											<a href="#">user@untitled.tld</a>
 										</li>
-										<li>
+										<!-- <li>
 											<h3>Phone</h3>
 											<span>(000) 000-0000</span>
-										</li>
+										</li> -->
 										<li>
 											<h3>Social</h3>
 											<ul class="icons">
