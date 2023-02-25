@@ -3882,13 +3882,24 @@ input, select, textarea {
 		
 	}
 	#pic {
-		width: 25%;
+		width: 15%;
 		height: auto;
 		border-radius: 1em;
 		border: 1px purple solid;      
 		border-radius: 10px;     
 		padding: 1px;
 	}
+
+	#pic2 {
+		width: 15%;
+		height: auto;
+		border-radius: 1em;
+		border: 1px purple solid;      
+		border-radius: 10px;     
+		padding: 1px;
+		
+	}
+
 		#intro p {
 			font-size: 1.25em;
 		}
@@ -3899,6 +3910,9 @@ input, select, textarea {
 					display: none;
 				}
 				#pic {
+					display: none;
+				}
+				#pic2 {
 					display: none;
 				}
 
